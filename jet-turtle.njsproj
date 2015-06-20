@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{d35dadd5-0741-40d2-9454-91471a4eba42}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ProjectFiles</ProjectView>
+    <StartupFile>gulpfile.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Compile Include="api\controllers\user.js" />
+    <Compile Include="api\models\user.js" />
+    <Compile Include="background\jobs\email\welcome.js" />
+    <Compile Include="background\jobs\facebook\page-profile.js" />
+    <Compile Include="dashboard\app\main.js" />
+    <Compile Include="gulpfile.js" />
+    <Compile Include="api\index.js" />
+    <Compile Include="background\index.js" />
+    <Compile Include="cache\index.js" />
+    <Content Include="assets\src\images\logo.png" />
+    <Content Include="assets\src\sass\bootstrap.scss" />
+    <Content Include="assets\src\sass\garden.scss" />
+    <Content Include="dashboard\index.html" />
+    <Content Include="dashboard\partials\home.html" />
+    <Content Include="dashboard\templates\fanpage.html" />
+    <Content Include="garden\index.html" />
+    <Content Include="health\index.html" />
+    <Content Include="health\partials\home.html" />
+    <Content Include="health\templates\item.html" />
+    <Content Include="living\index.html" />
+    <Compile Include="gulp\builds\build.js" />
+    <Compile Include="gulp\builds\default.js" />
+    <Compile Include="gulp\config\constants.js" />
+    <Compile Include="gulp\config\index.js" />
+    <Compile Include="gulp\config\modules.js" />
+    <Compile Include="gulp\tasks\develop.js" />
+    <Compile Include="gulp\tasks\images.js" />
+    <Compile Include="gulp\tasks\sass.js" />
+    <Compile Include="gulp\tasks\watch.js" />
+    <Compile Include="health\app\main.js" />
+    <Compile Include="living\app\main.js" />
+    <Compile Include="login\index.js" />
+    <Compile Include="nglib\data\user.js" />
+    <Compile Include="static\index.js" />
+    <Compile Include="nglib\main.js" />
+    <Content Include="living\partials\home.html" />
+    <Content Include="living\templates\post.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="api" />
+    <Folder Include="api\controllers" />
+    <Folder Include="api\models" />
+    <Folder Include="assets" />
+    <Folder Include="assets\src" />
+    <Folder Include="assets\src\images" />
+    <Folder Include="assets\src\sass" />
+    <Folder Include="background" />
+    <Folder Include="background\jobs" />
+    <Folder Include="background\jobs\facebook\" />
+    <Folder Include="background\jobs\email\" />
+    <Folder Include="cache" />
+    <Folder Include="dashboard" />
+    <Folder Include="dashboard\app" />
+    <Folder Include="dashboard\partials" />
+    <Folder Include="dashboard\templates" />
+    <Folder Include="garden" />
+    <Folder Include="gulp\builds\" />
+    <Folder Include="gulp\config\" />
+    <Folder Include="gulp\tasks\" />
+    <Folder Include="health" />
+    <Folder Include="health\app" />
+    <Folder Include="health\partials" />
+    <Folder Include="health\templates" />
+    <Folder Include="living" />
+    <Folder Include="living\app" />
+    <Folder Include="living\partials" />
+    <Folder Include="living\templates" />
+    <Folder Include="login" />
+    <Folder Include="gulp\" />
+    <Folder Include="nglib" />
+    <Folder Include="nglib\data\" />
+    <Folder Include="static" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
