@@ -1,10 +1,11 @@
-﻿var wildcards = require('./wildcards');
+﻿var wildcards = require('./wildcards'),
+    bower = './bower_components/';
 
 var sass = {
     src: './assets/src/sass/',
     dist: './assets/dist/css/',
     includePaths: [
-        './lib/bootstrap/assets/stylesheets/'
+        bower + 'bootstrap-sass/assets/stylesheets/'
     ]
 };
 

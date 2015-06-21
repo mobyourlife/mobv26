@@ -27,10 +27,18 @@
     <Compile Include="api\index.js" />
     <Compile Include="background\index.js" />
     <Compile Include="cache\index.js" />
+    <Content Include="assets\dist\css\bootstrap-mob.css" />
+    <Content Include="assets\dist\css\bootstrap-mob.min.css" />
+    <Content Include="assets\dist\css\bootstrap-mob.min.css.map" />
+    <Content Include="assets\dist\css\garden.css" />
+    <Content Include="assets\dist\css\garden.min.css" />
+    <Content Include="assets\dist\css\garden.min.css.map" />
     <Content Include="assets\src\images\logo.png" />
     <Content Include="assets\src\sass\_bootstrap-build.scss" />
     <Content Include="assets\src\sass\garden.scss" />
     <Content Include="bower.json" />
+    <Content Include="config\development.json" />
+    <Content Include="config\production.json" />
     <Content Include="dashboard\index.html" />
     <Content Include="dashboard\partials\home.html" />
     <Content Include="dashboard\templates\fanpage.html" />
@@ -134,6 +142,8 @@
     <Folder Include="api\controllers" />
     <Folder Include="api\models" />
     <Folder Include="assets" />
+    <Folder Include="assets\dist\" />
+    <Folder Include="assets\dist\css\" />
     <Folder Include="assets\src" />
     <Folder Include="assets\src\images" />
     <Folder Include="assets\src\sass" />
@@ -166,6 +176,7 @@
     <Folder Include="living\templates" />
     <Folder Include="login" />
     <Folder Include="gulp\" />
+    <Folder Include="config\" />
     <Folder Include="nglib" />
     <Folder Include="nglib\data\" />
     <Folder Include="static" />

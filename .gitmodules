@@ -1,3 +1,0 @@
-[submodule "lib/bootstrap"]
-	path = lib/bootstrap
-	url = git@bitbucket.org:fmobstudio/mobv26-bootstrap.git
