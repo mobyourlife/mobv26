@@ -19,9 +19,11 @@
     <Compile Include="api\controllers\user.js" />
     <Compile Include="api\models\user.js" />
     <Compile Include="assets\src\sass\bootstrap-mob.scss" />
-    <Compile Include="assets\src\sass\_bootstrap-variables.scss" />
+    <Compile Include="assets\src\sass\_variables.scss" />
+    <Compile Include="background\api.js" />
     <Compile Include="background\jobs\email\welcome.js" />
     <Compile Include="background\jobs\facebook\page-profile.js" />
+    <Compile Include="cache\api.js" />
     <Compile Include="dashboard\app\main.js" />
     <Compile Include="gulpfile.js" />
     <Compile Include="api\index.js" />
@@ -30,12 +32,7 @@
     <Content Include="assets\dist\css\bootstrap-mob.css" />
     <Content Include="assets\dist\css\bootstrap-mob.min.css" />
     <Content Include="assets\dist\css\bootstrap-mob.min.css.map" />
-    <Content Include="assets\dist\css\garden.css" />
-    <Content Include="assets\dist\css\garden.min.css" />
-    <Content Include="assets\dist\css\garden.min.css.map" />
     <Content Include="assets\src\images\logo.png" />
-    <Content Include="assets\src\sass\_bootstrap-build.scss" />
-    <Content Include="assets\src\sass\garden.scss" />
     <Content Include="bower.json" />
     <Content Include="config\development.json" />
     <Content Include="config\production.json" />
